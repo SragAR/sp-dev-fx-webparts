@@ -1,0 +1,12 @@
+{
+  "$schema": "https://dev.office.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "singleton-client-side-solution",
+    "id": "9641b084-448e-46e5-9c2b-fe054a77b975",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true
+  },
+  "paths": {
+    "zippedPackage": "solution/singleton.sppkg"
+  }
+}
