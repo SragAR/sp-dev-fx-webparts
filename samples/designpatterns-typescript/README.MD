@@ -25,7 +25,7 @@ I wanted to write this for so long but studying this subject, practicing and ach
 
 Solution|Author(s)
 --------|---------
-designpatterns-typescript | Luis Valencia [@levalencia] (https://www.twitter.com/levalencia)
+designpatterns-typescript | Luis Valencia [@levalencia](https://www.twitter.com/levalencia)
 
 ## Version history
 
