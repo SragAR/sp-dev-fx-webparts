@@ -25,7 +25,7 @@ I wanted to write this for so long but studying this subject, practicing and ach
 
 Solution|Author(s)
 --------|---------
-designpatterns-typescript | Luis Valencia
+designpatterns-typescript | Luis Valencia [@levalencia] (https://www.twitter.com/levalencia)
 
 ## Version history
 
@@ -41,7 +41,7 @@ Version|Date|Comments
 
 ###### PART 1. Creational Design Patterns Series:
 1.  [Factory method] ()
-2.  [Abstract Factory]()
+1.  [Abstract factory] ()
 3.  [Builder] ()
 4.  [Prototype] ()
 5.  [Singleton] ()
