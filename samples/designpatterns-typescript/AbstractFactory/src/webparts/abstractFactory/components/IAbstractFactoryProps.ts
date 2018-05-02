@@ -1,3 +1,3 @@
-export interface IAbstractFactoryProps {
-  description: string;
+export interface IAbstractfactoryProps {
+  datasource: string;
 }

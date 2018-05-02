@@ -1,10 +1,10 @@
-declare interface IAbstractFactoryWebPartStrings {
+declare interface IAbstractfactoryWebPartStrings {
   PropertyPaneDescription: string;
   BasicGroupName: string;
   DescriptionFieldLabel: string;
 }
 
-declare module 'AbstractFactoryWebPartStrings' {
-  const strings: IAbstractFactoryWebPartStrings;
+declare module 'AbstractfactoryWebPartStrings' {
+  const strings: IAbstractfactoryWebPartStrings;
   export = strings;
 }

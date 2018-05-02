@@ -1,6 +1,4 @@
-# Abstract Factory  applied to Sharepoint Framework
-
-#####Abstract Factory
+####Abstract Factory
 
 The abstract factory pattern will allow to define an interface for the creation of objects without specifying their concrete classes.  The objective of this pattern is that a class depends on the behavior of the abstract factory, which in turn will be implemented by different concrete classes that are changed at runtime based on some kind of configuration or predefined parameter.
 
@@ -338,4 +336,3 @@ export default class TypescriptDesignPatterns02AbstractFactoryWebPart
 
 Conclusion:
 We all know that Sharepoint Framework Projects are transpiled and bundled into one single JS file, however regardless of that for those of us who have worked in huge projects and are only User Interface Developers, we know that we can do better than what the standard samples show us in the standard documentation, with the above post I wanted to show you how simple is to create maintenable code, code that anyone can read, and later modify.
-

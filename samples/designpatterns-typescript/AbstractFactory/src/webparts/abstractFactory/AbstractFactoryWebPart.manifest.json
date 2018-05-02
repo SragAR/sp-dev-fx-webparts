@@ -1,7 +1,7 @@
 {
   "$schema": "https://dev.office.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
-  "id": "2988a116-4371-452b-aaaf-818e2af37e9e",
-  "alias": "AbstractFactoryWebPart",
+  "id": "46572037-3d17-4d88-b47a-3ab77e0cf090",
+  "alias": "AbstractfactoryWebPart",
   "componentType": "WebPart",
 
   // The "*" signifies that the version should be taken from the package.json
@@ -16,11 +16,11 @@
   "preconfiguredEntries": [{
     "groupId": "5c03119e-3074-46fd-976b-c60198311f70", // Other
     "group": { "default": "Other" },
-    "title": { "default": "AbstractFactory" },
-    "description": { "default": "AbstractFactory description" },
+    "title": { "default": "abstractfactory" },
+    "description": { "default": "abstractfactory description" },
     "officeFabricIconFontName": "Page",
     "properties": {
-      "description": "AbstractFactory"
+      "description": "abstractfactory"
     }
   }]
 }

@@ -4,24 +4,24 @@ import { Version } from '@microsoft/sp-core-library';
 import {
   BaseClientSideWebPart,
   IPropertyPaneConfiguration,
-  PropertyPaneTextField
-} from '@microsoft/sp-webpart-base';
+  PropertyPaneDropdown
+} from "@microsoft/sp-webpart-base";
 
-import * as strings from 'AbstractFactoryWebPartStrings';
-import AbstractFactory from './components/AbstractFactory';
-import { IAbstractFactoryProps } from './components/IAbstractFactoryProps';
+import * as strings from 'AbstractfactoryWebPartStrings';
+import Abstractfactory from './components/Abstractfactory';
+import { IAbstractfactoryProps } from './components/IAbstractfactoryProps';
 
-export interface IAbstractFactoryWebPartProps {
+export interface IAbstractfactoryWebPartProps {
   description: string;
 }
 
-export default class AbstractFactoryWebPart extends BaseClientSideWebPart<IAbstractFactoryWebPartProps> {
+export default class AbstractfactoryWebPart extends BaseClientSideWebPart<IAbstractfactoryWebPartProps> {
 
   public render(): void {
-    const element: React.ReactElement<IAbstractFactoryProps > = React.createElement(
-      AbstractFactory,
+    const element: React.ReactElement<IAbstractfactoryProps > = React.createElement(
+      Abstractfactory,
       {
-        description: this.properties.description
+        datasource: this.properties.description
       }
     );
 
@@ -43,9 +43,14 @@ export default class AbstractFactoryWebPart extends BaseClientSideWebPart<IAbstr
             {
               groupName: strings.BasicGroupName,
               groupFields: [
-                PropertyPaneTextField('description', {
-                  label: strings.DescriptionFieldLabel
-                })
+                PropertyPaneDropdown("datasource", {
+                  label: "DataSource",
+                  options: [
+                      { key: "1", text: "Sharepoint"},
+                      { key: "2", text: "JSON" }
+                    ],
+                  selectedKey: "1",
+                  })
               ]
             }
           ]

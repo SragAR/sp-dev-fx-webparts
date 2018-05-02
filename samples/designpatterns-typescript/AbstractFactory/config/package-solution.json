@@ -2,7 +2,7 @@
   "$schema": "https://dev.office.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
     "name": "abstract-factory-client-side-solution",
-    "id": "83872a6e-1b79-4866-9603-7da41acadd5b",
+    "id": "9ce25416-bcde-4d3a-b9f1-e3dd845ab5ff",
     "version": "1.0.0.0",
     "includeClientSideAssets": true
   },
