@@ -1,5 +1,5 @@
 import * as React from 'react';
-import styles from './AbstractFactory.module.scss';
+//import styles from './AbstractFactory.module.scss';
 import { IAbstractFactoryProps } from './IAbstractFactoryProps';
 import { escape } from '@microsoft/sp-lodash-subset';
 import { IAbstractFactoryState } from './IAbstractFactory';
@@ -22,7 +22,11 @@ React.Component<IAbstractFactoryProps, IAbstractFactoryState> {
         items: this.customerDao.listCustomers(),
     };
 
-    return null;
+    return (
+      <div>
+        Hello Abstract factory
+      </div>
+    );
   }
 
   public setInitialState(): void {

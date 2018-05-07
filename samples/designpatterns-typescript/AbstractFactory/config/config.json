@@ -6,12 +6,12 @@
       "components": [
         {
           "entrypoint": "./lib/webparts/abstractFactory/AbstractFactoryWebPart.js",
-          "manifest": "./src/webparts/abstractFactory/AbstractFactoryWebPart.manifest.json"
+          "manifest": "./src/webparts/abstractFactory/AbstractFactoryWebPart.manifest.json",
+          "outputPath": "./dist/abstract-factory-web-part.js"
         }
       ]
     }
   },
-  "externals": {},
   "localizedResources": {
     "AbstractFactoryWebPartStrings": "lib/webparts/abstractFactory/loc/{locale}.js"
   }
