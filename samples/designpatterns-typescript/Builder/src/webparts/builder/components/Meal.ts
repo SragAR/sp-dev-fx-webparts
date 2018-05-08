@@ -1,7 +1,7 @@
 import IItem from "./IItem";
 
 class Meal {
-    private items: IItem[];
+    private items: IItem[] = [];
 
     public addItem(item: IItem): void {
         this.items.push(item);
@@ -17,9 +17,9 @@ class Meal {
     }
 
     public showItems(): string {
-        let returnStr: string;
+        let returnStr: string = "";
         for(let item of this.items) {
-            returnStr +="Item:" + item.name;
+            returnStr +="Item:" + item.name();
             returnStr +=", Packing:" + item.packing().pack();
             returnStr +=", Price: " + item.price();
         }

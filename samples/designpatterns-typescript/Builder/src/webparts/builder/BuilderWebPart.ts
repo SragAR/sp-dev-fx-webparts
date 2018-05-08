@@ -15,7 +15,7 @@ import { IBuilderProps } from './components/IBuilderProps';
 
 export interface IBuilderWebPartProps {
   description: string;
-  selectedMeal: string;
+  selectedMeal: number;
 }
 
 export default class BuilderWebPart extends BaseClientSideWebPart<IBuilderWebPartProps> {
@@ -47,13 +47,13 @@ export default class BuilderWebPart extends BaseClientSideWebPart<IBuilderWebPar
             {
               groupName: "Group",
               groupFields: [
-                PropertyPaneDropdown("meal", {
+                PropertyPaneDropdown("selectedMeal", {
                   label: "Select meal",
                   options: [
-                    { key: "Veg", text: "Veg" },
-                    { key: "Nonveg", text: "Nonveg" }
+                    { key: 0, text: "Veg" },
+                    { key: 1, text: "Nonveg" }
                   ],
-                  selectedKey: "Nonveg"
+                  selectedKey: 0
                 })
               ]
             }
