@@ -4,11 +4,11 @@ import { IBuilderProps } from './IBuilderProps';
 import { escape } from '@microsoft/sp-lodash-subset';
 import MealBuilder from "./MealBuilder";
 import Meal from "./Meal";
-import { IPropertyPaneConfiguration } from "@microsoft/sp-webpart-base/lib/propertyPane/propertyPane/IPropertyPane";
+import { IPropertyPaneConfiguration } from "@microsoft/sp-webpart-base";
 import {
   PropertyPaneDropdown
 } from "@microsoft/sp-webpart-base";
-import Version from "@microsoft/sp-core-library/lib/Version";
+import {Version} from "@microsoft/sp-core-library";
 
 export default class Builder extends React.Component<IBuilderProps, {}> {
 
@@ -18,8 +18,11 @@ export default class Builder extends React.Component<IBuilderProps, {}> {
 
   constructor(props: IBuilderProps, state: any) {
     super(props);
-    this.setMeal(props.selectedMeal);
+    this.setMeal = this.setMeal.bind(this);
     this.mealBuilder = new MealBuilder();
+    this.setMeal(props.selectedMeal);
+    
+    
   }
 
   public render(): React.ReactElement<IBuilderProps> {
@@ -30,7 +33,7 @@ export default class Builder extends React.Component<IBuilderProps, {}> {
               <div className="ms-Grid-col ms-lg10 ms-xl8 ms-xlPush2 ms-lgPush1">
                 <span className="ms-font-xl ms-fontColor-white">Welcome to Burger Company!</span>
                 <p className="ms-font-l ms-fontColor-white">You have selected the following.</p>
-                  <span className={styles.label}>{this.meal.showItems()}</span>
+                  <span className={styles.label}>{this.meal && (this.meal.showItems())}</span>
               </div>
             </div>
           </div>
@@ -40,11 +43,12 @@ export default class Builder extends React.Component<IBuilderProps, {}> {
   protected get dataVersion(): Version {
     return Version.parse("1.0");
   }
-  private setMeal(selectedMeal: string): void {
-     if(selectedMeal === "VegMeal") {
+  private setMeal(selectedMeal: number): void {
+     if(selectedMeal === 0) {
         this.meal = this.mealBuilder.prepareVegMeal();
+        
      }
-     if(selectedMeal === "NonVegMeal") {
+     if(selectedMeal === 1) {
       this.meal = this.mealBuilder.prepareNonVegMeal();
    }
   }
