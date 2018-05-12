@@ -41,7 +41,7 @@ Version|Date|Comments
 
 ###### PART 1. Creational Design Patterns Series:
 1.  [Factory method] ()
-1.  [Abstract factory](./designpatterns-typescript/AbstractFactory)
+1.  [Abstract factory](./designpatterns-typescript/AbstractFactory/README.MD)
 3.  [Builder] ()
 4.  [Prototype] ()
 5.  [Singleton] ()
