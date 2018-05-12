@@ -40,11 +40,10 @@ Version|Date|Comments
 
 
 ###### PART 1. Creational Design Patterns Series:
-1.  [Factory method] ()
+1.  [Factory method](./FactoryMethod)
 1.  [Abstract factory](./AbstractFactory)
-3.  [Builder] ()
-4.  [Prototype] ()
-5.  [Singleton] ()
+3.  [Builder](./Builder)
+4.  [Singleton](./Singleton)
 
 
 
