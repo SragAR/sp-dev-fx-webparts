@@ -5,7 +5,6 @@ In software engineering, a design pattern is a general repeatable solution to a 
 
 I wanted to write this for so long but studying this subject, practicing and achieving the desired results its not an easy task.  If you come from the server development background like I do (C#/.NET Development for Farm solutions) or WCF services, REST API, or event ASP.NET WebForms or MVC, and if you worked in large projects then there is a big chance that you used some programming design patterns, at least the singleton pattern you had to use at some point in time.   As a Solutions Architect I was responsible to design and deliver large projects where code maintenance is one of the hardests things to achieve in huge projects, we had to create code that everyone can read, interpret and where changes can be applied easily.   Design Patterns allow you to create clean and understandable code that everyone can understand (with some experience) and introduce changes after delivery to production
 
-[picture of the web part in action]
 
 ## Used SharePoint Framework Version 
 ![drop](https://img.shields.io/badge/version-GA-green.svg)
