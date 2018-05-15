@@ -3,7 +3,7 @@ import * as React from "react";
 import styles from "./FactoryMethod.module.scss";
 import  { IFactoryMethodProps } from "./IFactoryMethodProps";
 import {
-  IDetailsGenericListItemState,
+  IDetailsListItemState,
   IDetailsNewsListItemState,
   IDetailsDirectoryListItemState,
   IDetailsAnnouncementListItemState,
@@ -52,7 +52,7 @@ export default class FactoryMethod extends React.Component<IFactoryMethodProps, 
       switch(this.props.listName) {
           case "GenericList":
             // tslint:disable-next-line:max-line-length
-            return <this.ListMarqueeSelection items={this.state.DetailsGenericListItemState.items} columns={this.state.columns} />;
+            return <this.ListMarqueeSelection items={this.state.DetailsListItemState.items} columns={this.state.columns} />;
           case "News":
             // tslint:disable-next-line:max-line-length
             return <this.ListMarqueeSelection items={this.state.DetailsNewsListItemState.items} columns={this.state.columns}/>;
@@ -121,7 +121,7 @@ export default class FactoryMethod extends React.Component<IFactoryMethodProps, 
         ? "Please configure list in Web Part properties"
         : "Ready",
       columns:[],
-      DetailsGenericListItemState:{
+      DetailsListItemState:{
         items:[]
       },
       DetailsNewsListItemState:{

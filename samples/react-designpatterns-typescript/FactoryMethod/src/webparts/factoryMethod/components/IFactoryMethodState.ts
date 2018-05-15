@@ -10,13 +10,13 @@ export interface IFactoryMethodState {
   hasError: boolean;
   status: string;
   columns: IColumn[];
-  DetailsGenericListItemState: IDetailsGenericListItemState;
+  DetailsListItemState: IDetailsListItemState;
   DetailsNewsListItemState: IDetailsNewsListItemState;
   DetailsDirectoryListItemState : IDetailsDirectoryListItemState;
   DetailsAnnouncementListItemState : IDetailsAnnouncementListItemState;
 }
 
-export interface IDetailsGenericListItemState {
+export interface IDetailsListItemState {
   items: IListItem[];
 }
 

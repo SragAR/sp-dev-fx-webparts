@@ -78,6 +78,7 @@ export default class FactoryMethodWebPart extends BaseClientSideWebPart<IFactory
       }
     );
 
+    //console.log(this._dataProvider.selectedList.Title);
     // reactDom.render(element, this.domElement);
     this._factorymethodContainerComponent = <FactoryMethod>ReactDom.render(element, this.domElement);
 
